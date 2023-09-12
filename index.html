@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Index page</title>
+</head>
+<body>
+
+ <h1>Hello World!</h1>
+
+ <p>This is the index page.</p>
+
+ <button id="clickButton">Click me</button> 
+
+ <h2>Clicks: <span id="clickCount">0</span></h2>
+
+ <script>
+   const button = document.getElementById("clickButton");
+   const clickCount = document.getElementById("clickCount");
+
+   let count = 0;
+
+   button.addEventListener("click", () => {
+     count++;
+     clickCount.textContent = count;
+   });
+ </script>
+
+</body>
+</html>
